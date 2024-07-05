@@ -1,0 +1,514 @@
+:root {
+    --gold: #ffd700;
+    --bg: #252525;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    min-height: 5000px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/4130.4.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: grayscale()
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1, .hero h4, .hero p {
+    text-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-family: "Great Vibes", cursive;
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    color: #ac930a;
+}
+
+.hero h4 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero a {
+    color: #ac930a;
+    background-color: #252525;
+    box-shadow: black;
+}
+
+.hero a:hover {
+    background-color: #ac930a;
+    color: #252525;
+}
+
+.mynavbar{
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(5px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand {
+    font-family: "Great Vibes", cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #5f4103;
+}
+
+.mynavbar .offcanvas-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+}
+
+.mynavbar .nav-link {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.home {
+    background-image: url(img/output-onlinepngtools.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.home h2,
+.story h2,
+.gifts h2 {
+    color: #5f4103;
+    font-family: "Great Vibes", cursive;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.home h3 {
+    color: #362501;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    color: #252525;
+    font-size: 1rem;
+}
+
+.home .couple {
+    margin-top: 100px;
+}
+
+.home .couple h3 {
+    font-family: "Great Vibes";
+    font-size: 2.4rem;
+    color: #5f4103;
+}
+
+.home .couple p {
+    font-size: 0.9rem;
+}
+
+.home .couple img {
+    width: 100%;
+}
+
+.home .heart {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(60px);
+}
+
+.home .heart i {
+    margin: auto;
+    color: #5f4103
+}
+
+.info {
+    background-image: url(img/9009356_4058244.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 8rem;
+    padding-bottom: 17rem;
+}
+
+.info h2,
+.rsvp h2 {
+    font-family: "Great Vibes";
+    color: #ffffff;
+    font-size: 4rem;
+}
+
+.info .alamat,
+.rsvp p {
+    font-size: 1.1rem;
+    padding-top: 5px;
+    color: white;
+}
+
+.info a {
+    color: #5f4103;
+    background-color: #ffffff;
+    box-shadow: black;
+    border: 1px;
+}
+
+.info a:hover {
+    background-color: #5f4103;
+    color: #ffffff;
+    border: 1px;
+}
+
+.info .description {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.info .card {
+    background-color: #0000001a !important;
+    color: #ffffff !important;
+    border: 1px;
+}
+
+.info .card-header {
+    border-bottom: 1px solid #999;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+    font-size: 1rem;
+}
+
+.info .card-footer {
+    font-size: 0.7rem;
+    border-top: 1px solid #999;
+}
+
+.story {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-image: url(img/output-onlinepngtools.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.story span,
+.gallery span,
+.gifts span {
+    text-transform: uppercase;
+    color: #252525;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.story p,
+.gallery p,
+.gifts p {
+    font-size: 0.9rem;
+}
+
+.gallery h2 {
+    font-family: "Great Vibes";
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+}
+
+.gallery span,
+.gallery p {
+    color: white;
+}
+
+.timeline {
+    list-style: none;
+    padding: 1.4rem 0;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #5f4103;
+    left: 50%;
+}
+
+.timeline li {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+    content: '';
+    display: table;
+}
+
+.timeline li::after {
+    clear: both;
+}
+
+.timeline li .timeline-image {
+    width: 160px;
+    height: 160px;
+    background-color: #ccc;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel {
+    width: 40%;
+    float: left;
+    border: 1px;
+    padding: 2rem;
+    position: relative;
+    border-radius: 5px;
+    background-color: #0000001a;
+}
+
+.timeline li .timeline-panel::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #0000001a;
+    border-right: 0 solid #0000001a;
+    border-bottom: 15px solid transparent;
+    width: 30px;
+    height: 30px;
+    right: -30px;
+    top: 70px;
+}
+
+.timeline li.inverted .timeline-panel {
+    float: right;
+}
+
+.timeline li.inverted .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -30px;
+    right: auto;
+}
+
+.gallery {
+    background-image: url(img/2148358108.jpg);
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.rsvp {
+    background-image: url(img/9009356_4058244.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+}
+
+.rsvp form label {
+    color: white;
+}
+
+.rsvp button {
+    background-color: #5f4103;
+    color: white;
+    border: 1px;
+}
+
+.rsvp button:hover {
+    background-color: white;
+    color: #5f4103;
+    border: 1px;
+}
+
+.gifts {
+    background-image: url(img/output-onlinepngtools.png);
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+footer {
+    padding: 3rem;
+    background-color: #5f4103;
+    color: white;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.audio-icon-wrapper {
+    width: 3rem;
+    height: 3rem;
+    font-size: 3rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    line-height: 0;
+}
+
+@keyframes rotating {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+/* Media Query */
+/* Extra Large */
+@media (max-width: 1200px) {
+    .home .heart {
+        transform: translateX(-50%) translateY(45px);
+    }
+}
+/* Laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+        .simply-countdown > .simply-section {
+            padding: 40px
+        }
+    }
+
+    .home .heart {
+        display: none;
+    }
+
+    .timeline::before {
+        left: 60px;
+    }
+
+    .timeline li .timeline-image {
+        margin-left: 45px;
+        left: 15px;
+        top: 16px;
+    }
+
+    .timeline li .timeline-panel {
+        width: calc((100% - 200px));
+        float: right;
+    }
+
+    .timeline li .timeline-panel::after {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -30px;
+        right: auto;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+        .simply-countdown > .simply-section {
+            padding: 30px
+        }
+    }
+
+    .mynavbar .nav-link {
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .sticky-top {
+        overflow: hidden;
+    }
+
+    .timeline li .timeline-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .rsvp form {
+        width: 60%;
+        margin-left: 150px;
+    }
+    
+}
+
+/* Mobile Phone */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+        .simply-countdown > .simply-section {
+            padding: 20px
+        }
+    }
+
+    .timeline li .timeline-panel {
+        width: 65%;
+        transform: translateX(-20px);
+    }
+
+    .timeline li .timeline-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .rsvp form {
+        width: 50%;
+        margin-left: 120px;
+    }
+}
